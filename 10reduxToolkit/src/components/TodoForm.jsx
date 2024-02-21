@@ -55,7 +55,7 @@ function TodoForm() {
             <label htmlFor="todoInput"
               className='basis-full ml-4'>Update your todo :-</label>
             <input type="text" name='todoText' id="todoInput" placeholder='todo....' 
-              value={updateInput || ""} onChange={(e)=>setUpdateInput(e.target.value)}
+              value={updateInput || targetTodo.text} onChange={(e)=>setUpdateInput(e.target.value)}
               className='basis-9/12 mx-auto p-4 rounded-l-xl'/>
             <input type="submit" value="Update" 
               className='basis-3/12 bg-blue-500 p-4 rounded-r-xl text-black'/>
